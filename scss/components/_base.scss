@@ -1,0 +1,28 @@
+@use '../abstract/mixin.scss' as *;
+@use '../abstract/variables.scss' as *;
+
+html {
+    padding: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-family: $font-familly-title;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h3{
+    font-family: $font-familly;
+    font-size: 18px;
+}
+
+
+nav li:hover{
+    @include couleur;
+}

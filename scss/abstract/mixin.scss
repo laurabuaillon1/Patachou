@@ -1,0 +1,15 @@
+@use '../abstract/variables.scss' as * ;
+
+@mixin couleur {
+    color: $brown;
+}
+
+@mixin title {
+    font-family: $font-familly-title;
+    font-size: $font-size-title;
+}
+
+@mixin texte {
+    font-family: $font-familly;
+    font-size: $font-size-texte;
+}

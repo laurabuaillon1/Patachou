@@ -1,0 +1,67 @@
+@use '../abstract/variables.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+hr {
+    border-width: 1px;
+    color: $black;
+    width: 90%;
+}
+
+.évènements {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: $font-familly-title;
+    }
+
+    &__description {
+        font-family: $font-familly;
+        font-size: 12px;
+        color:$black;
+    }
+
+    &__formulaire {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__formulaire div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__formulaire label {
+        font-family: $font-familly;
+        font-size: 12px;
+    }
+
+    &__formulaire button {
+        background-color: $brown;
+        color: $white;
+        border: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    &__checkbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+    }
+
+}

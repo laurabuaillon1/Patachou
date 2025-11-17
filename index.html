@@ -36,7 +36,7 @@
             <div class="informations__entreprise__citation">
                 <h3>“De toutes les passions, la seule vraiment respectable me
                     parait être la gourmandise.”</h3>
-                <p>Guy de Maupassant</p>
+                <p class="informations__entreprise__citation__auteur">Guy de Maupassant</p>
             </div>
             <p class="informations__entreprise__confection">Nos délicieux gâteaux sont confectionnés avec soin de
                 manière artisanale, en utilisant des ingrédients bruts issus de l’agriculture biologique, tout en
@@ -48,10 +48,10 @@
         <section class="pâtisseries__signature">
 
             <div class="pâtisseries__signature__irrésistible">
-                <h2>Nos pattiseries Signature</h2>
+                <h2>Nos pâtisseries Signature</h2>
                 <img class="pâtisseries__signature__irrésistible__img" src="./images/irresistible.jpg"
                     alt="Le chou doré, légèrement croustillant, est garni d'une crème onctueuse à la pistache, dévoilant des saveurs subtiles et raffinées. Saupoudrée de pistaches concassées, la pâtisserie est sublimée par un équilibre parfait entre douceur fondante et touche croquante.">
-                <p class="pâtisseries__signature__irrésistible__title">L’irrésistible</p>
+                <h3 class="pâtisseries__signature__irrésistible__title">L’irrésistible</h3>
                 <p class="pâtisseries__signature__irrésistible__description">Le chou doré, légèrement croustillant, est
                     garni d'une crème onctueuse à la pistache, dévoilant des
                     saveurs subtiles et raffinées. Saupoudrée de pistaches concassées, la pâtisserie est sublimée par un
@@ -61,7 +61,7 @@
             <div class="pâtisseries__signature__délicat">
                 <img class="pâtisseries__signature__délicat__img" src="./images/delicat.jpg"
                     alt="La pâte feuilletée légère et dorée est imprégnée d'une délicate crème parfumée à la rose, laissant s’épanouir des arômes floraux subtils et envoûtants. Saupoudrée de pétales de rose, la pâtisserie est magnifiée par un équilibre entre douceur fondante et fraîcheur florale.">
-                <p class="pâtisseries__signature__délicat__title">Le délicat</p>
+                <h3 class="pâtisseries__signature__délicat__title">Le délicat</h3>
                 <p class="pâtisseries__signature__délicat__description">La pâte feuilletée légère et dorée est imprégnée
                     d'une
                     délicate crème parfumée à la rose, laissant s’épanouir des arômes floraux subtils et envoûtants.
@@ -72,7 +72,7 @@
             <div class="pâtisseries__signature__impétueux">
                 <img class="pâtisseries__signature__impétueux__img" src="./images/impetueux.jpg"
                     alt="La pâte moelleuse est enrobée d'une ganache intense au chocolat noir, révélant des notes profondes et corsées à chaque bouchée. Sublimé par une fine couche de cacao amer, le dessert est magnifié par un contraste parfait entre l'onctuosité du chocolat et une légère amertume.">
-                <p class="pâtisseries__signature__impétueux__title">L’impétueux</p>
+                <h3 class="pâtisseries__signature__impétueux__title">L’impétueux</h3>
                 <p class="pâtisseries__signature__impétueux__description">La pâte moelleuse est enrobée d'une ganache
                     intense au chocolat noir, révélant des notes profondes et corsées à chaque bouchée. Sublimé par une
                     fine couche de cacao amer, le dessert est magnifié par un contraste parfait entre l'onctuosité du
@@ -111,7 +111,7 @@
                     vos invités une sélection raffinée de pâtisseries, biscuits, mignardises et tartes, soigneusement
                     élaborés pour sublimer chaque moment !</p>
                 <div class="évènements__formulaire">
-                    <form action="ajouter.php">
+                    <form class="évènements__formulaire__complet" action="ajouter.php">
                         <div class="évènements__formulaire__nom__et__prénom">
                             <label for="nom">Votre Nom et Prénom</label>
                             <input type="text" id="nom" name="nom">
@@ -125,7 +125,7 @@
                             <textarea name="message" id="message"></textarea>
                         </div>
                         <div class="évènements__formulaire__checkbox">
-                            <label><input type="radio" name="radio">J'ai lu et j'accepte la politique de
+                            <label class="évènements__formulaire__checkbox__texte" ><input type="checkbox" name="radio">J'ai lu et j'accepte la politique de
                                 confidentialité</label>
                         </div>
                         <button class="évènements__formulaire__button">Envoyer</button>
@@ -143,7 +143,7 @@
         </section>
         <!--BLOC BOUTIQUE MAPS-->
         <section class="boutique__maps">
-            <iframe
+            <iframe class="boutique__maps__carte"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5394.959025072851!2d-0.5617011916378607!3d47.46108450137835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878ba132ff4e7%3A0xc11116e4d0e11bae!2s14%20Bd%20Yvonne%20Poirel%2C%2049000%20Angers!5e0!3m2!1sfr!2sfr!4v1763373569350!5m2!1sfr!2sfr"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -156,8 +156,8 @@
         <div class="boutique__informations">
             <img class="boutique__informations__logo" src="./images/logo-white.svg"
                 alt="logo de l'entreprise patachou en blanc">
-            <div class="boutique__informations__navbar">
-                <ul>
+            <div >
+                <ul class="boutique__informations__navbar">
                     <li><a href="accueil.html">Accueil</a></li>
                     <li><a href="notre_savoir-faire.html">Notre savoir-faire</a></li>
                     <li><a href="nos_patisseries.html">Nos pâtisseries</a></li>
@@ -167,12 +167,12 @@
             <div class="boutique__informations__phone">
                 <p>02 40 50 40 50</p>
                 <p>14 Bd Yvonne Poirel
-                    49000 ANGERS</p>
+                   <br>49000 ANGERS</p>
             </div>
             <div class="boutique__informations__hour">
                 <p>HORAIRES D’OUVERTURES</p>
                 <p>Mardi au vendredi : 11h – 19h
-                    Samedi : 10h30 – 19h</p>
+                    <br>Samedi : 10h30 – 19h</p>
             </div>
             <div class="boutique__informations__social__network">
                 <p>Suivez-nous</p>
@@ -191,14 +191,14 @@
             </div>
         </div>
         <!--BLOC FOOTER LEGAL-->
-        <div class="footer__légal">
-            <ul>
-                <li class="footer__légal__mentions__légales"><a href="mentions_légales.html">Mentions légales</a></li>
-                <li class="footer__légal__politiques de confidentialités"><a
-                        href="politique_de_confidentialité.html">Politique de confidentialité</a></li>
-            </ul>
-        </div>
     </footer>
+    <section class="footer__légal">
+        <ul>
+            <li class="footer__légal__mentions__légales"><a href="mentions_légales.html">Mentions légales</a></li>
+            <li class="footer__légal__politiques de confidentialités"><a
+                    href="politique_de_confidentialité.html">Politique de confidentialité</a></li>
+        </ul>
+    </section>
 </body>
 
 </html>

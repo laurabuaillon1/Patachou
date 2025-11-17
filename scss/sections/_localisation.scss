@@ -1,0 +1,40 @@
+@use '../abstract/variables.scss' as *;
+@use '../abstract/mixin.scss' as *;
+
+.boutique__localisation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $brown;
+    color: $white;
+    padding: 16px;
+    gap: 24px;
+    height: 30vh;
+
+
+    &__title{
+        @include title;
+        font-weight: 5600;
+        text-align: center;
+    }
+
+    &__description{
+        @include texte ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.boutique__maps{
+
+    &__carte{
+        width: 100%;
+        height: 60vh;
+    }
+    
+    
+}

@@ -1,3 +1,5 @@
+@use '../abstract/variables.scss' as * ;
+@use '../abstract/mixin.scss' as *;
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html {
@@ -10,13 +12,17 @@ html {
     box-sizing: border-box;
 }
 
-header {
+.menu__navigation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 16px;
     gap: 16px;
+
+    &__logo{
+        width: 80px;
+    }
 
     li {
         list-style: none;
@@ -25,9 +31,10 @@ header {
 
 
     a {
+        @include texte ;
+        color: $black;
         text-decoration: none;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
+        font-weight: 600;
         font-style: normal;
         text-transform: uppercase;
     }

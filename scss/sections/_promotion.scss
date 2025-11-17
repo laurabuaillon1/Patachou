@@ -1,3 +1,5 @@
+@use '../abstract/variables.scss' as *;
+@use '../abstract/mixin.scss' as *;
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
@@ -7,26 +9,33 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px 0px;
 
-    .informations__entreprise__citation{
-        padding:  16px;
+    &__citation{
         display: flex;
         flex-direction: column;
         gap: 16px;
+        padding: 40px 0px;
     }
 
 
     h3 {
-        font-family: "Crete Round", serif;
-        font-weight: 400;
-        font-style: normal;
+        @include title;
+        font-size: 20px;
     }
 
-    p{
-        font-family: "Crete Round", serif;
-        font-weight: 400;
-        font-style: normal;
+    &__citation__auteur{
+        @include title;
+        font-size: 12px;
+        font-weight: 800;
+        color: $black;
+    }
+
+
+
+    &__confection{
+        @include texte;
+        color: $black;
+        margin-bottom: 60px;
 
     }
 
@@ -34,9 +43,7 @@
         border: 1px solid black;
         padding: 16px;
         width: 100%;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        @include texte ;
         font-size: 10px;
     }
 

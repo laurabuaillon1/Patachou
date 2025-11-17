@@ -1,5 +1,8 @@
+@use '../abstract/mixin.scss' as *;
 @use '../abstract/variables.scss' as *;
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 .histoire__patachou {
     padding: 40px 16px;
     display: flex;
@@ -25,7 +28,7 @@
 
     &__title {
         text-align: center;
-        font-family: "Kaisei Decol", serif;
+        @include title;
         font-weight: 800;
         font-style: normal;
 
@@ -38,16 +41,13 @@
     }
 
     &__description{
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 12px;
+        @include texte ;
+        color: $black;
     }
 
     &__button {
-        font-family: "Poppins", sans-serif;
+        @include texte ;
         font-weight: 200;
-        font-style: normal;
         padding: 8px;
         background-color: $brown;
         border: none;

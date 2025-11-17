@@ -1,4 +1,4 @@
-@use '../abstract/variables.scss' as * ;
+@use '../abstract/variables.scss' as *;
 @use '../abstract/mixin.scss' as *;
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -20,22 +20,42 @@ html {
     padding: 16px;
     gap: 16px;
 
-    &__logo{
+    @media screen and (min-width:540px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__logo {
         width: 80px;
     }
 
     li {
         list-style: none;
         text-align: center;
+
     }
 
 
+
     a {
-        @include texte ;
+        @include texte;
         color: $black;
         text-decoration: none;
         font-weight: 600;
         font-style: normal;
         text-transform: uppercase;
+
+    }
+}
+
+/*responsive*/
+
+ul {
+    @media screen and (min-width:540px) {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        
     }
 }

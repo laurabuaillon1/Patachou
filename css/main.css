@@ -113,6 +113,13 @@ html {
   padding: 16px;
   gap: 16px;
 }
+@media screen and (min-width: 540px) {
+  .menu__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .menu__navigation__logo {
   width: 80px;
 }
@@ -128,6 +135,15 @@ html {
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
+}
+
+/*responsive*/
+@media screen and (min-width: 540px) {
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
 }
 
 hr {
@@ -203,6 +219,24 @@ h1 {
   padding: 16px;
   font-family: "Kaisei Decol", serif;
   font-size: 24px;
+}
+
+/*responsive*/
+@media screen and (min-width: 540px) {
+  .pâtisseries__haute__couture {
+    height: 30vh;
+  }
+}
+
+h1 {
+  background: rgba(255, 255, 255, 0.829);
+  padding: 32px;
+  height: 20vh;
+  font-family: "Kaisei Decol", serif;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .histoire__patachou {

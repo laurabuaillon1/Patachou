@@ -21,3 +21,23 @@ h1 {
     padding: 16px;
     @include title;
 }
+
+/*responsive*/
+
+.pâtisseries__haute__couture {
+    @media screen and (min-width:540px) {
+        height: 30vh;
+        
+
+    }
+}
+
+h1 {
+    background: rgba(255, 255, 255, 0.829);
+    padding: 32px;
+    height: 20vh;
+    @include title;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

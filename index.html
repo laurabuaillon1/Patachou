@@ -28,7 +28,7 @@
 
         <!--BLOC PATISSERIE COUTURE-->
         <section class="pâtisseries__haute__couture">
-            <h1>Pâtisseries Haute Couture</h1>
+            <h1>Pâtisseries <br> Haute Couture</h1>
         </section>
 
         <!--BLOC INFORMATION ENTREPRISE-->
@@ -81,40 +81,53 @@
             </div>
         </section>
         <!--HISTOIRE-->
-        <section class="histoire__patachou">
-            <div class="histoire__patachou__container">
-                <img class="histoire__patachou__douille" src="./images/poche-douille_histoire-patachou.png"
-                    alt="Une petite pâtisserie familiale, fondée il y a plusieurs décennies, se transmet de génération en génération, préservant l'artisanat traditionnel et les recettes secrètes.">
-                <img class="histoire__patachou__quote" src="./images/quote.svg"
-                    alt="parenthèse pour l'histoire de l'entreprise patachou">
+        <section class="histoire">
+            <div class="histoire__patachou">
+                <div class="histoire__patachou__container">
+                    <img class="histoire__patachou__douille" src="./images/poche-douille_histoire-patachou.png"
+                        alt="Une petite pâtisserie familiale, fondée il y a plusieurs décennies, se transmet de génération en génération, préservant l'artisanat traditionnel et les recettes secrètes.">
+                    <div class="histoire__patachou__bloc">
+                        <img class="histoire__patachou__quote" src="./images/quote.svg"
+                            alt="parenthèse pour l'histoire de l'entreprise patachou">
+                        <h2 class="histoire__patachou__title">Patachou, toute une histoire…</h2>
+                    </div>
+                </div>
+                <div class="histoire__patachou__container__description__button">
+                    <p class="histoire__patachou__description">Une petite pâtisserie familiale, fondée il y a plusieurs
+                        décennies, se transmet de génération en
+                        génération, préservant l'artisanat traditionnel et les recettes secrètes. Connue pour ses
+                        créations
+                        uniques et raffinées, elle devient au fil du temps un lieu incontournable pour les amateurs de
+                        douceurs. Malgré les défis modernes, la passion et le savoir-faire continuent de faire vivre
+                        cette
+                        enseigne, où chaque pâtisserie raconte une histoire d'amour du métier
+                    </p>
+                    <button class="histoire__patachou__button">Notre histoire</button>
+                </div>
             </div>
-            <h2 class="histoire__patachou__title">Patachou, toute une histoire…</h2>
-            <div class="histoire__patachou__container__description__button">
-                <p class="histoire__patachou__description">Une petite pâtisserie familiale, fondée il y a plusieurs
-                    décennies, se transmet de génération en
-                    génération, préservant l'artisanat traditionnel et les recettes secrètes. Connue pour ses
-                    créations
-                    uniques et raffinées, elle devient au fil du temps un lieu incontournable pour les amateurs de
-                    douceurs. Malgré les défis modernes, la passion et le savoir-faire continuent de faire vivre
-                    cette
-                    enseigne, où chaque pâtisserie raconte une histoire d'amour du métier
-                </p>
-                <button class="histoire__patachou__button">Notre histoire</button>
-            </div>
-
             <hr>
             <!--EVENEMENT ET FORMULAIRE-->
             <div class="évènements">
                 <h2 class="évènements__title">Des gâteaux pour votre événement ?</h2>
-                <p class="évènements__description">Pour vos événements exclusifs – anniversaire, séminaire d’entreprise
-                    ou réception privée – offrez à
-                    vos invités une sélection raffinée de pâtisseries, biscuits, mignardises et tartes, soigneusement
-                    élaborés pour sublimer chaque moment !</p>
+
                 <div class="évènements__formulaire">
+                    <p class="évènements__description">Pour vos événements exclusifs – anniversaire, séminaire
+                        d’entreprise
+                        ou réception privée – offrez à
+                        vos invités une sélection raffinée de pâtisseries, biscuits, mignardises et tartes,
+                        soigneusement
+                        élaborés pour sublimer chaque moment !</p>
                     <form class="évènements__formulaire__complet" action="ajouter.php">
-                        <div class="évènements__formulaire__nom__et__prénom">
-                            <label for="nom">Votre Nom et Prénom</label>
-                            <input type="text" id="nom" name="nom">
+                        <p class="évènements__formulaire__complet__title">Votre Nom et prénom</p>
+                        <div class="évènements__formulaire__complet__infos">
+                            <div class="évènements__formulaire__complet__infos__name">
+                                <input type="text" id="nom" name="nom">
+                                <label for="nom">Prénom</label>
+                            </div>
+                            <div class="évènements__formulaire__complet__infos__name">
+                                <input type="text" id="nom" name="nom">
+                                <label for="nom">Nom</label>
+                            </div>
                         </div>
                         <div class="évènements__formulaire__email">
                             <label for="email">Votre email</label>
@@ -125,7 +138,8 @@
                             <textarea name="message" id="message"></textarea>
                         </div>
                         <div class="évènements__formulaire__checkbox">
-                            <label class="évènements__formulaire__checkbox__texte" ><input type="checkbox" name="radio">J'ai lu et j'accepte la politique de
+                            <label class="évènements__formulaire__checkbox__texte"><input type="checkbox"
+                                    name="radio">J'ai lu et j'accepte la politique de
                                 confidentialité</label>
                         </div>
                         <button class="évènements__formulaire__button">Envoyer</button>
@@ -156,7 +170,7 @@
         <div class="boutique__informations">
             <img class="boutique__informations__logo" src="./images/logo-white.svg"
                 alt="logo de l'entreprise patachou en blanc">
-            <div >
+            <div>
                 <ul class="boutique__informations__navbar">
                     <li><a href="accueil.html">Accueil</a></li>
                     <li><a href="notre_savoir-faire.html">Notre savoir-faire</a></li>
@@ -167,12 +181,14 @@
             <div class="boutique__informations__phone">
                 <p>02 40 50 40 50</p>
                 <p>14 Bd Yvonne Poirel
-                   <br>49000 ANGERS</p>
+                    <br>49000 ANGERS
+                </p>
             </div>
             <div class="boutique__informations__hour">
                 <p>HORAIRES D’OUVERTURES</p>
                 <p>Mardi au vendredi : 11h – 19h
-                    <br>Samedi : 10h30 – 19h</p>
+                    <br>Samedi : 10h30 – 19h
+                </p>
             </div>
             <div class="boutique__informations__social__network">
                 <p>Suivez-nous</p>
@@ -193,7 +209,7 @@
         <!--BLOC FOOTER LEGAL-->
     </footer>
     <section class="footer__légal">
-        <ul>
+        <ul class="footer__légal__container" >
             <li class="footer__légal__mentions__légales"><a href="mentions_légales.html">Mentions légales</a></li>
             <li class="footer__légal__politiques de confidentialités"><a
                     href="politique_de_confidentialité.html">Politique de confidentialité</a></li>

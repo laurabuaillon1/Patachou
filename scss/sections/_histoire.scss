@@ -3,23 +3,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+.histoire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .histoire__patachou {
     padding: 40px 16px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 16px;
+
+    @media screen and (min-width:768px) {
+        padding: 60px;
+        gap: 40px;
+
+
+    }
+
+
 
     &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 16px;
+        width: 100%;
+
+
     }
 
     &__douille {
-        width: 60%;
+        width: 50%;
+
+
     }
+
+    &__bloc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+
+
+        }
+    }
+
+
 
     &__quote {
         width: 50px;
@@ -34,25 +74,36 @@
 
     }
 
-    &__container__description__button{
+    &__container__description__button {
         display: flex;
         flex-direction: column;
         gap: 16px;
     }
 
-    &__description{
-        @include texte ;
+    &__description {
+        @include texte;
         color: $black;
+
+        @media screen and (min-width:768px) {
+            font-size: $font-size-texte-tablette;
+
+        }
     }
 
     &__button {
-        @include texte ;
+        @include texte;
         font-weight: 200;
         padding: 8px;
         background-color: $brown;
         border: none;
         color: $white;
         width: 40%;
+
+        @media screen and (min-width:768px) {
+            font-size: $font-size-texte-tablette;
+            width: 20%;
+
+        }
     }
 
 

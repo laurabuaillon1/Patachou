@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/**Responsive  tablette**/
+/**Responsive Dekstop**/
 html {
   padding: 0;
 }
@@ -21,10 +23,22 @@ h2 {
   font-size: 20px;
   font-weight: 400;
 }
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
+}
 
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Kaisei Decol", serif;
   font-size: 18px;
+  font-weight: 400;
+  font-size: 18px;
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 40px;
+  }
 }
 
 nav li:hover {
@@ -39,41 +53,82 @@ footer {
   flex-direction: column;
   padding: 60px;
 }
-
-p {
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+  }
+}
+footer p {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   color: #ffffff;
 }
-
-.boutique__informations {
+footer .boutique__informations {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
 }
-.boutique__informations__logo {
+@media screen and (min-width: 768px) {
+  footer .boutique__informations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+footer .boutique__informations__logo {
   width: 70%;
 }
-.boutique__informations__navbar a {
+@media screen and (min-width: 768px) {
+  footer .boutique__informations__logo {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer .boutique__informations__navbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+footer .boutique__informations__navbar a {
   color: #ffffff;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
 }
-.boutique__informations__social__network {
+footer .boutique__informations__phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .boutique__informations__hour {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .boutique__informations__social__network {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.boutique__informations__facebook__instagram {
+footer .boutique__informations__facebook__instagram {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
-.boutique__informations__facebook__instagram svg {
+footer .boutique__informations__facebook__instagram svg {
   width: 25px;
+}
+@media screen and (min-width: 768px) {
+  footer div {
+    font-size: "Poppins", sans-serif;
+  }
 }
 
 /**footer legal**/
@@ -86,6 +141,14 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__légal__container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
 }
 
 .footer__légal a {
@@ -113,15 +176,21 @@ html {
   padding: 16px;
   gap: 16px;
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 768px) {
   .menu__navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 16px 32px;
   }
 }
 .menu__navigation__logo {
   width: 80px;
+}
+@media screen and (min-width: 768px) {
+  .menu__navigation__logo {
+    width: 140px;
+  }
 }
 .menu__navigation li {
   list-style: none;
@@ -136,16 +205,15 @@ html {
   font-style: normal;
   text-transform: uppercase;
 }
-
-/*responsive*/
-@media screen and (min-width: 540px) {
-  ul {
+@media screen and (min-width: 768px) {
+  .menu__navigation ul {
     display: flex;
     flex-direction: row;
     gap: 8px;
   }
 }
 
+/*responsive*/
 hr {
   border-width: 1px;
   color: black;
@@ -156,6 +224,14 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 40px 16px;
+}
+@media screen and (min-width: 768px) {
+  .évènements {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .évènements__title {
   display: flex;
@@ -172,32 +248,77 @@ hr {
 .évènements__formulaire {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
-.évènements form {
+
+/**FORMULAIRE*/
+.évènements__formulaire__complet {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 4px;
 }
-.évènements__formulaire div {
+.évènements__formulaire__complet__title {
+  color: black;
+}
+.évènements__formulaire__complet__infos {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .évènements__formulaire__complet__infos {
+    width: 100%;
+  }
+}
+.évènements__formulaire__complet .évènements__formulaire__complet__infos__name {
+  width: 100%;
+}
+.évènements__formulaire__complet #nom {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .évènements__formulaire__complet #nom {
+    width: 100%;
+  }
+}
+.évènements__formulaire__complet #email {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
-.évènements__formulaire label {
+.évènements__formulaire__complet #message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.évènements__formulaire__complet .évènements__formulaire__email {
+  margin-top: 8px;
+}
+.évènements__formulaire__complet .évènements__formulaire__message {
+  margin-top: 8px;
+}
+.évènements__formulaire__complet textarea {
+  height: 10vh;
+}
+.évènements__formulaire__complet label {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
 }
-.évènements__formulaire button {
-  background-color: #AB864C;
-  color: #ffffff;
-  border: none;
-  width: 100%;
-  padding: 10px;
+@media screen and (min-width: 768px) {
+  .évènements__formulaire__complet .évènements__formulaire__checkbox {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
 }
-.évènements__checkbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 16px;
+.évènements__formulaire__complet button {
+  background-color: #AB864C;
+  padding: 8px;
+  border: none;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin-top: 16px;
 }
 
 .pâtisseries__haute__couture {
@@ -222,15 +343,16 @@ h1 {
 }
 
 /*responsive*/
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 768px) {
   .pâtisseries__haute__couture {
     height: 30vh;
+    padding: 40px 70px;
   }
 }
 
 h1 {
   background: rgba(255, 255, 255, 0.829);
-  padding: 32px;
+  padding: 40px;
   height: 20vh;
   font-family: "Kaisei Decol", serif;
   font-size: 24px;
@@ -238,22 +360,56 @@ h1 {
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+.histoire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .histoire__patachou {
   padding: 40px 16px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+@media screen and (min-width: 768px) {
+  .histoire__patachou {
+    padding: 60px;
+    gap: 40px;
+  }
 }
 .histoire__patachou__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  width: 100%;
 }
 .histoire__patachou__douille {
-  width: 60%;
+  width: 50%;
+}
+.histoire__patachou__bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .histoire__patachou__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
 .histoire__patachou__quote {
   width: 50px;
@@ -276,6 +432,11 @@ h1 {
   font-size: 12px;
   color: black;
 }
+@media screen and (min-width: 768px) {
+  .histoire__patachou__description {
+    font-size: 16px;
+  }
+}
 .histoire__patachou__button {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
@@ -285,6 +446,12 @@ h1 {
   border: none;
   color: #ffffff;
   width: 40%;
+}
+@media screen and (min-width: 768px) {
+  .histoire__patachou__button {
+    font-size: 16px;
+    width: 20%;
+  }
 }
 
 .boutique__localisation {
@@ -298,9 +465,12 @@ h1 {
   gap: 24px;
   height: 30vh;
 }
+@media screen and (min-width: 768px) {
+  .boutique__localisation {
+    height: 20vh;
+  }
+}
 .boutique__localisation__title {
-  font-family: "Kaisei Decol", serif;
-  font-size: 24px;
   font-weight: 5600;
   text-align: center;
 }
@@ -312,35 +482,60 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .boutique__localisation__description {
+    height: 20vh;
+    font-size: 16px;
+  }
+}
 
 .boutique__maps__carte {
   width: 100%;
   height: 60vh;
 }
+@media screen and (min-width: 768px) {
+  .boutique__maps__carte {
+    height: 30vh;
+  }
+}
 
+.pâtisseries__signature {
+  background-color: #AB864C;
+  padding: 40px;
+}
 .pâtisseries__signature__irrésistible, .pâtisseries__signature__délicat, .pâtisseries__signature__impétueux {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 40px 24px;
-  background-color: #AB864C;
   color: #ffffff;
   gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .pâtisseries__signature__irrésistible, .pâtisseries__signature__délicat, .pâtisseries__signature__impétueux {
+    padding: 24px;
+    gap: 40px;
+  }
 }
 .pâtisseries__signature__irrésistible__img, .pâtisseries__signature__délicat__img, .pâtisseries__signature__impétueux__img {
   width: 90%;
 }
-.pâtisseries__signature__irrésistible__title, .pâtisseries__signature__délicat__title, .pâtisseries__signature__impétueux__title {
-  font-weight: 400;
-  font-size: 18px;
-  font-family: "Kaisei Decol", serif;
+@media screen and (min-width: 768px) {
+  .pâtisseries__signature__irrésistible__img, .pâtisseries__signature__délicat__img, .pâtisseries__signature__impétueux__img {
+    width: 40%;
+  }
 }
 .pâtisseries__signature__irrésistible__description, .pâtisseries__signature__délicat__description, .pâtisseries__signature__impétueux__description {
   font-size: 12px;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
+}
+@media screen and (min-width: 768px) {
+  .pâtisseries__signature__irrésistible__description, .pâtisseries__signature__délicat__description, .pâtisseries__signature__impétueux__description {
+    font-size: 16px;
+  }
 }
 .pâtisseries__signature__button {
   padding: 10px;
@@ -351,6 +546,11 @@ h1 {
   font-weight: 200;
   font-style: normal;
   font-size: 10px;
+}
+@media screen and (min-width: 768px) {
+  .pâtisseries__signature__button {
+    font-size: 16px;
+  }
 }
 
 .informations__entreprise {
@@ -383,14 +583,17 @@ h1 {
   font-size: 12px;
   color: black;
   margin-bottom: 60px;
-}
-.informations__entreprise .informations__entreprise__confection {
   border: 1px solid black;
   padding: 16px;
   width: 100%;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
   font-size: 10px;
+}
+@media screen and (min-width: 768px) {
+  .informations__entreprise__confection {
+    width: 80%;
+    padding: 32px;
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -13,3 +13,34 @@
     font-family: $font-familly;
     font-size: $font-size-texte;
 }
+
+
+/**Responsive  tablette**/
+
+@mixin titletabletteh1 {
+    font-size: $font-size-title-tablette-h1;
+    
+}
+
+@mixin titletabletteh2{
+    font-size: $font-size-title-tablette-h2;
+}
+
+@mixin titletabletteh3{
+    font-size: $font-size-title-tablette-h3;
+}
+
+@mixin textetablette{
+    font-size: $font-size-texte-tablette;   
+}
+
+
+/**Responsive Dekstop**/
+
+@mixin titledekstop {
+    font-size: $font-size-title-dekstop;
+}
+
+@mixin textedekstop {
+    font-size: $font-size-texte-dekstop;
+}

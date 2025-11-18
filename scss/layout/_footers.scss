@@ -3,64 +3,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-footer{
+footer {
     background-color: $black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 60px;
-}
 
-p{
-    @include texte;
-    color: $white;
-    
-}
-
-.boutique__informations{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-
-    &__logo{
-        width: 70%;
-    }
-
-    &__navbar a {
-        color: $white;
-        text-decoration: none;
-        @include texte;
-    }
-
-
-    &__social__network{
+    @media screen and (min-width:768px) {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        align-items: center;
+        padding: 24px;
     }
 
 
-    &__facebook__instagram{
+    p {
+        @include texte;
+        color: $white;
+
+    }
+
+    .boutique__informations {
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        &__logo {
+            width: 70%;
+
+            @media screen and (min-width:768px) {
+                width: 20%;
+            }
+        }
+
+        &__navbar {
+            @media screen and (min-width:768px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+
+        }
+
+        &__navbar a {
+            color: $white;
+            text-decoration: none;
+            @include texte;
+
+
+        }
+
+        &__phone {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__hour {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+
+
+        &__social__network {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+
+        &__facebook__instagram {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+        }
+
+        &__facebook__instagram svg {
+            width: 25px;
+        }
+
     }
-    &__facebook__instagram svg {
-        width: 25px;
+
+    div {
+        @media screen and (min-width:768px) {
+            font-size: $font-familly;
+        }
     }
 
 }
-
 
 
 
 /**footer legal**/
 
-.footer__légal{
+.footer__légal {
     border: 1px solid $brown;
     background-color: $black;
     padding: 16px;
@@ -69,12 +120,20 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+
+
+}
+
+.footer__légal__container{
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: row;
+        gap:16px;
+    }
 }
 
 .footer__légal a {
     text-decoration: none;
     color: $white;
-    @include texte ;
-
+    @include texte;
 }

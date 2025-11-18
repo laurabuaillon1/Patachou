@@ -11,18 +11,32 @@ html {
     box-sizing: border-box;
 }
 
-h2{
+
+h2 {
     font-family: $font-familly-title;
     font-size: 20px;
     font-weight: 400;
+
+    @media screen and (min-width:768px) {
+        @include titletabletteh2;
+
+    }
 }
 
-h3{
-    font-family: $font-familly;
+h3 {
+    font-family: $font-familly-title;
     font-size: 18px;
+    font-weight: 400;
+    font-size: 18px;
+
+    @media screen and (min-width:768px) {
+        @include titletabletteh1;
+
+    }
 }
 
 
-nav li:hover{
+
+nav li:hover {
     @include couleur;
 }

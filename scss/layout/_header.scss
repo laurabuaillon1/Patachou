@@ -20,14 +20,19 @@ html {
     padding: 16px;
     gap: 16px;
 
-    @media screen and (min-width:540px) {
+    @media screen and (min-width:768px) {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        padding: 16px 32px;
     }
 
     &__logo {
         width: 80px;
+
+        @media screen and (min-width:768px) {
+            width: 140px;
+        }
     }
 
     li {
@@ -47,15 +52,15 @@ html {
         text-transform: uppercase;
 
     }
+    
+    ul {
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+    
+        }
+    }
 }
 
 /*responsive*/
-
-ul {
-    @media screen and (min-width:540px) {
-        display: flex;
-        flex-direction: row;
-        gap: 8px;
-        
-    }
-}

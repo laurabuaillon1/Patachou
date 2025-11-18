@@ -10,7 +10,7 @@
     align-items: center;
     text-align: center;
 
-    &__citation{
+    &__citation {
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -23,7 +23,7 @@
         font-size: 20px;
     }
 
-    &__citation__auteur{
+    &__citation__auteur {
         @include title;
         font-size: 12px;
         font-weight: 800;
@@ -32,21 +32,20 @@
 
 
 
-    &__confection{
+    &__confection {
         @include texte;
         color: $black;
         margin-bottom: 60px;
-
-    }
-
-    .informations__entreprise__confection {
         border: 1px solid black;
         padding: 16px;
         width: 100%;
-        @include texte ;
         font-size: 10px;
+
+        @media screen and (min-width:768px) {
+            width: 80%;
+            padding: 32px;
+            @include textetablette;
+
+        }
     }
-
-
-
 }

@@ -26,12 +26,12 @@ h1 {
     }
 
     @media screen and (min-width:1440px) {
-        @include titledekstoph1 ;
+        @include titledekstoph1;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 50%;
-        
+
     }
 }
 
@@ -43,14 +43,14 @@ h2 {
 
     @media screen and (min-width:768px) {
         @include titletabletteh2;
-        
+
     }
-    
+
     @media screen and (min-width:1440px) {
         @include titledekstoph2;
         font-weight: 400;
 
-        }
+    }
 }
 
 h3 {
@@ -71,7 +71,6 @@ h3 {
     }
 }
 
-
-nav li:hover {
-    @include couleur;
+li:first-child a {
+    color: $brown;
 }

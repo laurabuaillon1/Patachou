@@ -24,7 +24,7 @@ footer {
     }
 
 
-    
+
 
     .boutique__informations {
         display: flex;
@@ -75,11 +75,14 @@ footer {
             text-decoration: none;
             @include texte;
 
+
             @media screen and (min-width:1440px) {
                 @include textedekstop;
             }
+        }
 
-
+        li:first-child a {
+            color: $brown;
         }
 
         &__phone {
@@ -154,8 +157,8 @@ footer {
         }
 
         @media screen and (min-width:1440px) {
-                width: 30px;
-            }
+            width: 30px;
+        }
     }
 }
 

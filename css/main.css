@@ -79,7 +79,7 @@ h3 {
   }
 }
 
-nav li:hover {
+li:first-child a {
   color: #AB864C;
 }
 
@@ -157,6 +157,9 @@ footer .boutique__informations__navbar a {
   footer .boutique__informations__navbar a {
     font-size: 16px;
   }
+}
+footer .boutique__informations li:first-child a {
+  color: #AB864C;
 }
 footer .boutique__informations__phone {
   display: flex;
@@ -343,9 +346,6 @@ html {
     gap: 40px;
   }
 }
-.menu__navigation ul li:first-child a {
-  color: #AB864C;
-}
 
 hr {
   border-width: 1px;
@@ -440,15 +440,9 @@ hr {
   }
 }
 .évènements__formulaire__complet .évènements__formulaire__complet__infos__name {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-}
-.évènements__formulaire__complet #nom {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .évènements__formulaire__complet #nom {
-    width: 100%;
-  }
 }
 .évènements__formulaire__complet #email {
   display: flex;

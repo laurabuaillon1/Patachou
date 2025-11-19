@@ -62,10 +62,12 @@ html {
             font-size: $font-size-texte-dekstop;
 
         }
-
-
-
     }
+
+
+
+
+
 
     ul {
         @media screen and (min-width:768px) {
@@ -78,9 +80,11 @@ html {
         @media screen and (min-width:1440px) {
             display: flex;
             flex-direction: row;
-            gap: 24px;
+            gap: 40px;
+        }
+
+        li:first-child a {
+            color: $brown;
         }
     }
 }
-
-/*responsive*/

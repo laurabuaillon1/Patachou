@@ -41,7 +41,6 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 15vh;
   }
 }
 
@@ -58,6 +57,7 @@ h2 {
 @media screen and (min-width: 1440px) {
   h2 {
     font-size: 40px;
+    font-weight: 400;
   }
 }
 
@@ -74,8 +74,8 @@ h3 {
 }
 @media screen and (min-width: 1440px) {
   h3 {
-    font-size: 32px;
-    font-weight: 800;
+    font-size: 24px;
+    font-weight: 400;
   }
 }
 
@@ -155,7 +155,7 @@ footer .boutique__informations__navbar a {
 }
 @media screen and (min-width: 1440px) {
   footer .boutique__informations__navbar a {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 footer .boutique__informations__phone {
@@ -174,7 +174,7 @@ footer .boutique__informations__phone {
 }
 @media screen and (min-width: 1440px) {
   footer .boutique__informations__phone {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 footer .boutique__informations__hour {
@@ -193,7 +193,7 @@ footer .boutique__informations__hour {
 }
 @media screen and (min-width: 1440px) {
   footer .boutique__informations__hour {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 footer .boutique__informations__social__network {
@@ -326,7 +326,7 @@ html {
 }
 @media screen and (min-width: 1440px) {
   .menu__navigation a {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -340,11 +340,13 @@ html {
   .menu__navigation ul {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 40px;
   }
 }
+.menu__navigation ul li:first-child a {
+  color: #AB864C;
+}
 
-/*responsive*/
 hr {
   border-width: 1px;
   color: black;
@@ -355,7 +357,6 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 40px 16px;
 }
 @media screen and (min-width: 768px) {
   .évènements {
@@ -372,6 +373,9 @@ hr {
     gap: 16px;
   }
 }
+.évènements__title {
+  font-weight: 800;
+}
 .évènements__description {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
@@ -379,7 +383,7 @@ hr {
 }
 @media screen and (min-width: 1440px) {
   .évènements__description {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .évènements__formulaire {
@@ -462,6 +466,9 @@ hr {
 .évènements__formulaire__complet .évènements__formulaire__message {
   margin-top: 8px;
 }
+.évènements__formulaire__complet input {
+  height: 30px;
+}
 .évènements__formulaire__complet textarea {
   height: 10vh;
 }
@@ -469,11 +476,18 @@ hr {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
 }
+.évènements__formulaire__complet .évènements__formulaire__checkbox__texte {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
 @media screen and (min-width: 768px) {
   .évènements__formulaire__complet .évènements__formulaire__checkbox__texte {
     margin-top: 16px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 8px;
   }
 }
@@ -508,6 +522,12 @@ hr {
 @media screen and (min-width: 768px) {
   .pâtisseries__haute__couture {
     height: 30vh;
+    padding: 40px 70px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pâtisseries__haute__couture {
+    height: 40vh;
     padding: 40px 70px;
   }
 }
@@ -553,6 +573,11 @@ hr {
     display: flex;
     flex-direction: row;
   }
+}
+.histoire .histoire__patachou__group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .histoire .histoire__patachou__container {
   display: flex;
@@ -658,7 +683,6 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 15vh;
   }
 }
 .boutique__localisation__title {
@@ -699,11 +723,6 @@ hr {
 @media screen and (min-width: 768px) {
   .boutique__maps__carte {
     height: 30vh;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .boutique__maps__carte {
-    height: 20vh;
   }
 }
 
@@ -762,8 +781,7 @@ hr {
 }
 @media screen and (min-width: 1440px) {
   .pâtisseries__signature__irrésistible__img, .pâtisseries__signature__délicat__img, .pâtisseries__signature__impétueux__img {
-    width: 90%;
-    height: 20vh;
+    width: 50%;
   }
 }
 .pâtisseries__signature__irrésistible__description, .pâtisseries__signature__délicat__description, .pâtisseries__signature__impétueux__description {
@@ -779,7 +797,8 @@ hr {
 }
 @media screen and (min-width: 1440px) {
   .pâtisseries__signature__irrésistible__description, .pâtisseries__signature__délicat__description, .pâtisseries__signature__impétueux__description {
-    font-size: 20px;
+    font-size: 16px;
+    padding: 24px;
   }
 }
 .pâtisseries__signature__button {
@@ -799,7 +818,7 @@ hr {
 }
 @media screen and (min-width: 1440px) {
   .pâtisseries__signature__button {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -814,13 +833,18 @@ hr {
 }
 @media screen and (min-width: 1440px) {
   .informations__entreprise {
-    margin: 60px 60px;
+    margin: 60px;
   }
 }
 .informations__entreprise__citation {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+@media screen and (min-width: 1440px) {
+  .informations__entreprise__citation {
+    width: 80%;
+  }
 }
 .informations__entreprise__citation__auteur {
   font-family: "Kaisei Decol", serif;
@@ -831,7 +855,7 @@ hr {
 }
 @media screen and (min-width: 1440px) {
   .informations__entreprise__citation__auteur {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 .informations__entreprise__confection {
@@ -852,8 +876,8 @@ hr {
 }
 @media screen and (min-width: 1440px) {
   .informations__entreprise__confection {
-    font-size: 24px;
-    width: 70%;
+    font-size: 16px;
+    width: 50%;
   }
 }
 

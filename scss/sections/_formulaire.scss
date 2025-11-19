@@ -12,7 +12,6 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding: 40px 16px;
 
     @media screen and (min-width:768px) {
         display: flex;
@@ -27,7 +26,9 @@ hr {
         gap: 16px;
     }
 
-    
+    &__title {
+        font-weight: 800;
+    }
 
     &__description {
         font-family: $font-familly;
@@ -35,8 +36,8 @@ hr {
         color: $black;
 
         @media screen and (min-width:1440px) {
-        font-size: $font-size-texte-dekstop;
-    }
+            font-size: $font-size-texte-dekstop;
+        }
     }
 
     &__formulaire {
@@ -51,10 +52,10 @@ hr {
         }
 
         @media screen and (min-width:1440px) {
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-    }
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
 
     }
 
@@ -128,6 +129,10 @@ hr {
         margin-top: 8px;
     }
 
+    input {
+        height: 30px;
+    }
+
     textarea {
         height: 10vh;
     }
@@ -139,16 +144,23 @@ hr {
 
 
     .évènements__formulaire__checkbox__texte {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:8px;
+
+
         @media screen and (min-width:768px) {
             margin-top: 16px;
             display: flex;
             flex-direction: row;
+            align-items: center;
             gap: 8px;
         }
 
         @media screen and (min-width:1440px) {
-        gap: 8px;
-    }
+            gap: 8px;
+        }
     }
 
 

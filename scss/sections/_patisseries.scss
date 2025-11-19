@@ -61,8 +61,8 @@
             }
 
             @media screen and (min-width:1440px) {
-            width: 90%;
-            height: 20vh;
+            width: 50%;
+            
         }
         }
 
@@ -72,13 +72,14 @@
             font-family: "Poppins", sans-serif;
             font-weight: 200;
             font-style: normal;
-
+            
             @media screen and (min-width:768px) {
                 font-size: $font-size-texte-tablette;
             }
-
+            
             @media screen and (min-width:1440px) {
-            font-size: $font-size-texte-dekstop;
+                font-size: $font-size-texte-dekstop;
+                padding: 24px;
         }
         }
     }

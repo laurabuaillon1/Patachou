@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+/******************/
+/****FOOTER********/
+/******************/
+
 footer {
     background-color: $black;
     display: flex;
@@ -13,17 +17,14 @@ footer {
 
     @media screen and (min-width:768px) {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
-        padding: 24px;
+        padding: 60px;
     }
 
 
-    p {
-        @include texte;
-        color: $white;
-
-    }
+    
 
     .boutique__informations {
         display: flex;
@@ -35,9 +36,15 @@ footer {
         @media screen and (min-width:768px) {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: row;
             width: 100%;
+        }
+
+        @media screen and (min-width:1440px) {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
         }
 
         &__logo {
@@ -45,6 +52,12 @@ footer {
 
             @media screen and (min-width:768px) {
                 width: 20%;
+            }
+
+            @media screen and (min-width:1440px) {
+                width: 10%;
+                display: flex;
+                justify-content: center;
             }
         }
 
@@ -62,6 +75,10 @@ footer {
             text-decoration: none;
             @include texte;
 
+            @media screen and (min-width:1440px) {
+                @include textedekstop;
+            }
+
 
         }
 
@@ -69,47 +86,94 @@ footer {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            color: $white;
+            font-family: $font-familly;
+
+            @media screen and (min-width:768px) {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            @media screen and (min-width:1440px) {
+                @include textedekstop;
+            }
         }
 
         &__hour {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            color: $white;
+            font-family: $font-familly;
+
+            @media screen and (min-width:768px) {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            @media screen and (min-width:1440px) {
+                @include textedekstop;
+            }
         }
+    }
 
 
 
-        &__social__network {
+    .boutique__informations__social__network {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        color: $white;
+        font-family: $font-familly;
+
+        @media screen and (min-width:768px) {
             display: flex;
             flex-direction: column;
-            gap: 8px;
-        }
-
-
-        &__facebook__instagram {
-            display: flex;
-            flex-direction: row;
             justify-content: flex-start;
-
-        }
-
-        &__facebook__instagram svg {
-            width: 25px;
+            align-items: flex-start;
+            gap: 16px;
         }
 
     }
 
-    div {
+
+    &__facebook__instagram {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+    }
+
+    svg {
+        width: 25px;
+
         @media screen and (min-width:768px) {
-            font-size: $font-familly;
+            width: 16px;
         }
-    }
 
+        @media screen and (min-width:1440px) {
+                width: 30px;
+            }
+    }
 }
 
 
 
+div {
+    @media screen and (min-width:768px) {
+        font-size: $font-familly;
+        font-weight: 300;
+    }
+}
+
+
+
+
+/****************/
 /**footer legal**/
+/****************/
 
 .footer__légal {
     border: 1px solid $brown;
@@ -124,11 +188,11 @@ footer {
 
 }
 
-.footer__légal__container{
+.footer__légal__container {
     @media screen and (min-width:768px) {
         display: flex;
         flex-direction: row;
-        gap:16px;
+        gap: 16px;
     }
 }
 
@@ -136,4 +200,6 @@ footer {
     text-decoration: none;
     color: $white;
     @include texte;
+    font-weight: 200;
+    font-family: $font-familly;
 }

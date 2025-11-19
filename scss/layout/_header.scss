@@ -27,6 +27,13 @@ html {
         padding: 16px 32px;
     }
 
+    @media screen and (min-width:1440px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px 80px;
+    }
+
     &__logo {
         width: 80px;
 
@@ -51,14 +58,27 @@ html {
         font-style: normal;
         text-transform: uppercase;
 
+        @media screen and (min-width:1440px) {
+            font-size: $font-size-texte-dekstop;
+
+        }
+
+
+
     }
-    
+
     ul {
         @media screen and (min-width:768px) {
             display: flex;
             flex-direction: row;
             gap: 8px;
-    
+
+        }
+
+        @media screen and (min-width:1440px) {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
         }
     }
 }

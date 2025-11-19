@@ -37,8 +37,16 @@
 
 /**Responsive Dekstop**/
 
-@mixin titledekstop {
-    font-size: $font-size-title-dekstop;
+@mixin titledekstoph1 {
+    font-size: $font-size-title-dekstop-h1;
+}
+
+@mixin titledekstoph2 {
+    font-size: $font-size-title-dekstop-h2;
+}
+
+@mixin titledekstoph3 {
+    font-size: $font-size-title-dekstop-h3;
 }
 
 @mixin textedekstop {

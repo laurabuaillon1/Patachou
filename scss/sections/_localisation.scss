@@ -1,7 +1,12 @@
 @use '../abstract/variables.scss' as *;
 @use '../abstract/mixin.scss' as *;
 
-.boutique__localisation{
+/***********************/
+/***BOUTIQUE ADRESSE***/
+/**********************/
+
+
+.boutique__localisation {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,46 +18,60 @@
     height: 30vh;
 
     @media screen and (min-width:768px) {
-            height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+    }
+
+
+    &__title {
+        font-weight: 5600;
+        text-align: center;
+
+        @media screen and (min-width:768px) {
+            @include titletabletteh1;
+        }
+
+        @media screen and (min-width:1440px) {
+            @include titledekstoph1;
         }
 
 
-    &__title{
-        font-weight: 5600;
-        text-align: center;
     }
 
-    &__description{
-        @include texte ;
+    &__description {
+        @include texte;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         @media screen and (min-width:768px) {
-            height: 20vh;
             @include textetablette;
         }
-    
-    
     }
 }
 
+/*************************/
+/*****MAPS****************/
+/**************************/
 
-.boutique__maps{
 
-    &__carte{
+.boutique__maps {
+
+    &__carte {
         width: 100%;
         height: 60vh;
 
-    @media screen and (min-width:768px) {
+        @media screen and (min-width:768px) {
             height: 30vh;
-            
+
         }
 
-
-
+        @media screen and (min-width:1440px) {
+            height: 20vh;
+        }
     }
-    
-    
 }

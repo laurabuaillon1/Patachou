@@ -1,9 +1,7 @@
 @use '../abstract/mixin.scss' as *;
 @use '../abstract/variables.scss' as *;
 
-html {
-    padding: 0;
-}
+
 
 * {
     padding: 0;
@@ -16,9 +14,7 @@ h1 {
     padding: 16px;
     height: 20vh;
     @include title;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
 
     @media screen and (min-width:768px) {
         @include titletabletteh1;
@@ -27,11 +23,7 @@ h1 {
 
     @media screen and (min-width:1440px) {
         @include titledekstoph1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 50%;
-
     }
 }
 
